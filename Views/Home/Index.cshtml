@@ -1,0 +1,36 @@
+﻿
+<h2>Birthday Calculator</h2>
+
+<h5>Dad : 
+    <div class="Dad">
+    @{ 
+        var matt = ((Convert.ToDateTime("6-18-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until my birthday";
+
+     } @matt</div></h5>
+
+<h5>Mom : <div class="Mom">
+      @{
+          var shannon = ((Convert.ToDateTime("1-5-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until shannon birthday";
+          } @shannon</div></h5>
+
+<h5>Kenzie : <div class="Kenzie">
+    @{
+        var kenzie = ((Convert.ToDateTime("8-31-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until kenzie birthday";
+    } @kenzie</div></h5>
+
+<h5>Mason : <div class="Mason">
+    @{
+        var mason = ((Convert.ToDateTime("8-16-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until mason birthday";
+    } @mason</div></h5>
+
+<h5>Anniversary : <div class="Anniversary">
+    @{
+        var anniversary = ((Convert.ToDateTime("3-17-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until anniversary";
+
+    } @anniversary</div></h5>
+
+<h5>Christmas : <div class="Christmas">
+      @{
+          var christmas = ((Convert.ToDateTime("12-25-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Christmas";
+
+      } @christmas</div></h5>
