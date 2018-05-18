@@ -89,7 +89,7 @@
                 var christDate = Convert.ToDateTime("12-25");
                 if (christDate < DateTime.Now)
                 {
-                    christmas = ((Convert.ToDateTime("12-25" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Mason birthday";
+                    christmas = ((Convert.ToDateTime("12-25-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Mason birthday";
                 }
                 else
                 {
@@ -105,7 +105,7 @@
                 var grandpaDate = Convert.ToDateTime("5-4");
                 if (grandpaDate < DateTime.Now)
                 {
-                    grandpa = ((Convert.ToDateTime("5-4" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Grandpa birthday";
+                    grandpa = ((Convert.ToDateTime("5-4-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Grandpa birthday";
                 }
                 else
                 {
@@ -117,14 +117,14 @@
     <h5>
         Grandma : <div class="Christmas">
             @{ var grandma = string.Empty;
-                var grandmaDate = Convert.ToDateTime("12-25");
+                var grandmaDate = Convert.ToDateTime("10-18");
                 if (grandmaDate < DateTime.Now)
                 {
-                    grandma = ((Convert.ToDateTime("12-25" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Grandma birthday";
+                    grandma = ((Convert.ToDateTime("10-18-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Grandma birthday";
                 }
                 else
                 {
-                    grandma = ((Convert.ToDateTime("12-25-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Grandma birthday";
+                    grandma = ((Convert.ToDateTime("10-18-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Grandma birthday";
                 }
             } @grandma
         </div>
@@ -133,14 +133,14 @@
     <h5>
         Jennifer : <div class="Christmas">
             @{ var jennifer = string.Empty;
-                var jennDate = Convert.ToDateTime("12-25");
+                var jennDate = Convert.ToDateTime("4-6");
                 if (jennDate < DateTime.Now)
                 {
-                    jennifer = ((Convert.ToDateTime("12-25" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Grandma birthday";
+                    jennifer = ((Convert.ToDateTime("4-6-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Grandma birthday";
                 }
                 else
                 {
-                    jennifer = ((Convert.ToDateTime("12-25-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Grandma birthday";
+                    jennifer = ((Convert.ToDateTime("4-6-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Grandma birthday";
                 }
             } @jennifer
         </div>
@@ -149,14 +149,14 @@
     <h5>
         Jennifer : <div class="Christmas">
             @{ var caleb = string.Empty;
-                var calebDate = Convert.ToDateTime("12-25");
+                var calebDate = Convert.ToDateTime("6-26");
                 if (calebDate < DateTime.Now)
                 {
-                    caleb = ((Convert.ToDateTime("12-25" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Grandma birthday";
+                    caleb = ((Convert.ToDateTime("6-26-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Grandma birthday";
                 }
                 else
                 {
-                    caleb = ((Convert.ToDateTime("12-25-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Grandma birthday";
+                    caleb = ((Convert.ToDateTime("6-26-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Grandma birthday";
                 }
             } @caleb
         </div>
