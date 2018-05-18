@@ -1,99 +1,101 @@
 ﻿
-<h2>Birthday Calculator</h2>
+<h2 style="text-align: center;">Birthday Calculator</h2>
 
-<h5>
-    Dad :
-    <div class="Dad">
-        @{ var matt = string.Empty;
-            var mattDate = Convert.ToDateTime("6-18");
-            if (mattDate < DateTime.Now)
-            {
-                matt = ((Convert.ToDateTime("6-18-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Matt birthday";
-            }
-            else
-            {
-                matt = ((Convert.ToDateTime("6-18-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Matt birthday";
-            }
-        } @matt
-    </div>
-</h5></div></h5>
+<div style="text-align:center; font-weight:bold">
+    <h5>
+        Dad :
+        <div class="Dad">
+            @{ var matt = string.Empty;
+                var mattDate = Convert.ToDateTime("6-18");
+                if (mattDate < DateTime.Now)
+                {
+                    matt = ((Convert.ToDateTime("6-18-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Matt birthday";
+                }
+                else
+                {
+                    matt = ((Convert.ToDateTime("6-18-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Matt birthday";
+                }
+            } @matt
+        </div>
+    </h5>
 
-<h5>
-    Mom : <div class="Mom">
-        @{ var shannon = string.Empty;
-            var shannonDate = Convert.ToDateTime("1-5");
-            if (shannonDate < DateTime.Now)
-            {
-                shannon = ((Convert.ToDateTime("1-5-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Shannon birthday";
-            }
-            else
-            {
-                shannon = ((Convert.ToDateTime("1-5-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Shannon birthday";
-            }
-        } @shannon
-    </div>
-</h5>
+    <h5>
+        Mom : <div class="Mom">
+            @{ var shannon = string.Empty;
+                var shannonDate = Convert.ToDateTime("1-5");
+                if (shannonDate < DateTime.Now)
+                {
+                    shannon = ((Convert.ToDateTime("1-5-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Shannon birthday";
+                }
+                else
+                {
+                    shannon = ((Convert.ToDateTime("1-5-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Shannon birthday";
+                }
+            } @shannon
+        </div>
+    </h5>
 
-<h5>
-    Kenzie : <div class="Kenzie">
-    @{ var kenzie = string.Empty;
-        var kenzieDate = Convert.ToDateTime("8-31");
-        if (kenzieDate < DateTime.Now)
-        {
-            kenzie = ((Convert.ToDateTime("8-31-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Kenzie birthday";
-        }
-        else
-        {
-            kenzie = ((Convert.ToDateTime("8-31-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Kenzie birthday";
-        }
-    } @kenzie
+    <h5>
+        Kenzie : <div class="Kenzie">
+            @{ var kenzie = string.Empty;
+                var kenzieDate = Convert.ToDateTime("8-31");
+                if (kenzieDate < DateTime.Now)
+                {
+                    kenzie = ((Convert.ToDateTime("8-31-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Kenzie birthday";
+                }
+                else
+                {
+                    kenzie = ((Convert.ToDateTime("8-31-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Kenzie birthday";
+                }
+            } @kenzie
+        </div>
+    </h5>
+
+    <h5>
+        Mason : <div class="Mason">
+            @{ var mason = string.Empty;
+                var masonDate = Convert.ToDateTime("8-16");
+                if (masonDate < DateTime.Now)
+                {
+                    mason = ((Convert.ToDateTime("8-16-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Mason birthday";
+                }
+                else
+                {
+                    mason = ((Convert.ToDateTime("8-16-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Mason birthday";
+                }
+            } @mason
+        </div>
+    </h5>
+
+    <h5>
+        Anniversary : <div class="Anniversary">
+            @{ var anniversary = string.Empty;
+                var annDate = Convert.ToDateTime("3-17");
+                if (annDate < DateTime.Now)
+                {
+                    anniversary = ((Convert.ToDateTime("3-17-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until anniversary";
+                }
+                else
+                {
+                    anniversary = ((Convert.ToDateTime("3-17-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until anniversary";
+                }
+            } @anniversary
+        </div>
+    </h5>
+
+    <h5>
+        Christmas : <div class="Christmas">
+            @{ var christmas = string.Empty;
+                var christDate = Convert.ToDateTime("12-25");
+                if (christDate < DateTime.Now)
+                {
+                    christmas = ((Convert.ToDateTime("12-25" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Mason birthday";
+                }
+                else
+                {
+                    christmas = ((Convert.ToDateTime("12-25-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Mason birthday";
+                }
+            } @christmas
+        </div>
+    </h5>
 </div>
-</h5>
-
-<h5>
-    Mason : <div class="Mason">
-    @{ var mason = string.Empty;
-        var masonDate = Convert.ToDateTime("8-16");
-        if (masonDate < DateTime.Now)
-        {
-            mason = ((Convert.ToDateTime("8-16-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Mason birthday";
-        }
-        else
-        {
-            mason = ((Convert.ToDateTime("8-16-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Mason birthday";
-        }
-    } @mason
-</div>
-</h5>
-
-<h5>
-    Anniversary : <div class="Anniversary">
-    @{ var anniversary = string.Empty;
-        var annDate = Convert.ToDateTime("3-17");
-        if (annDate < DateTime.Now)
-        {
-            anniversary = ((Convert.ToDateTime("3-17-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until anniversary";
-        }
-        else
-        {
-            anniversary = ((Convert.ToDateTime("3-17-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until anniversary";
-        }
-    } @anniversary
-</div>
-</h5>
-
-<h5>
-    Christmas : <div class="Christmas">
-    @{ var christmas = string.Empty;
-        var christDate = Convert.ToDateTime("12-25");
-        if (christDate < DateTime.Now)
-        {
-            christmas = ((Convert.ToDateTime("12-25" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Mason birthday";
-        }
-        else
-        {
-            christmas = ((Convert.ToDateTime("12-25-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Mason birthday";
-        }
-    } @christmas
-</div>
-</h5>
