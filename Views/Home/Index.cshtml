@@ -100,7 +100,7 @@
     </h5>
 
     <h5>
-        Grandpa : <div class="Christmas">
+        Grandpa : <div class="Grandpa">
             @{ var grandpa = string.Empty;
                 var grandpaDate = Convert.ToDateTime("5-4");
                 if (grandpaDate < DateTime.Now)
@@ -115,7 +115,7 @@
     </h5>
 
     <h5>
-        Grandma : <div class="Christmas">
+        Grandma : <div class="Grandma">
             @{ var grandma = string.Empty;
                 var grandmaDate = Convert.ToDateTime("10-18");
                 if (grandmaDate < DateTime.Now)
@@ -131,32 +131,32 @@
     </h5>
 
     <h5>
-        Jennifer : <div class="Christmas">
+        Jennifer : <div class="Jennifer">
             @{ var jennifer = string.Empty;
                 var jennDate = Convert.ToDateTime("4-6");
                 if (jennDate < DateTime.Now)
                 {
-                    jennifer = ((Convert.ToDateTime("4-6-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Grandma birthday";
+                    jennifer = ((Convert.ToDateTime("4-6-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Jennifer birthday";
                 }
                 else
                 {
-                    jennifer = ((Convert.ToDateTime("4-6-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Grandma birthday";
+                    jennifer = ((Convert.ToDateTime("4-6-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Jennifer birthday";
                 }
             } @jennifer
         </div>
     </h5>
 
     <h5>
-        Caleb : <div class="Christmas">
+        Caleb : <div class="Caleb">
             @{ var caleb = string.Empty;
                 var calebDate = Convert.ToDateTime("6-26");
                 if (calebDate < DateTime.Now)
                 {
-                    caleb = ((Convert.ToDateTime("6-26-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Grandma birthday";
+                    caleb = ((Convert.ToDateTime("6-26-" + (DateTime.Now.AddYears(1)).Year) - DateTime.Now).ToString("dd")) + " days until Caleb birthday";
                 }
                 else
                 {
-                    caleb = ((Convert.ToDateTime("6-26-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Grandma birthday";
+                    caleb = ((Convert.ToDateTime("6-26-" + DateTime.Now.Year)) - DateTime.Now).ToString("dd") + " days until Caleb birthday";
                 }
             } @caleb
         </div>
